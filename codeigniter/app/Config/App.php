@@ -18,7 +18,7 @@ class App extends BaseConfig
      */
 
     public string $baseURL = 'https://cerberus-project.online/';
->>>>>>> 5e17307e14199cabb75bf26b1686112ddf2cb223:app/Config/App.php
+
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
