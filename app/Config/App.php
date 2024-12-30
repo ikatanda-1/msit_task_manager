@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'https://cerberus-project.online/task_manager/public/';
+    public string $baseURL = 'https://cerberus-project.online/task_manager/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
