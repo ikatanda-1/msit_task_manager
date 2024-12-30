@@ -16,10 +16,8 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-<<<<<<< HEAD:codeigniter/app/Config/App.php
-    public string $baseURL = 'http://localhost/';
-=======
-    public string $baseURL = 'https://cerberus-project.online/task_manager/';
+
+    public string $baseURL = 'https://cerberus-project.online/';
 >>>>>>> 5e17307e14199cabb75bf26b1686112ddf2cb223:app/Config/App.php
 
     /**
