@@ -29,9 +29,9 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'admin_msit_',
-        'password'     => 'K-0dksjDSie@',
-        'database'     => 'task_manager',
+        'username'     => 'cerbeezt_user_one',
+        'password'     => 'Sesame22..',
+        'database'     => 'cerbeezt_task_manager',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
