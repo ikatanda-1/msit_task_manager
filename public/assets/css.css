@@ -1,0 +1,212 @@
+.gh_look_and_feel {
+    background-color: #24292f; /* GitHub's dark background */
+    padding: 20px;
+    
+    width: 200px; /* Set the width of the left menu */
+    height: 100vh; /* Make it span the full viewport height */
+    position: fixed; /* Keep the menu fixed on the left */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.gh_look_and_feel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Make the list take full width */
+}
+
+.gh_look_and_feel li {
+    width: 100%; /* Ensure each item spans the full width of the menu */
+}
+
+.gh_look_and_feel a {
+    text-decoration: none;
+    color: #ffffff; /* White text for contrast */
+    font-size: 14px;
+    font-weight: 500;
+    display: block; /* Make the links block-level for easy clicking */
+    padding: 10px 15px; /* Add padding for spacing */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.gh_look_and_feel a:hover {
+    background-color: #444d56; /* Slightly lighter background on hover */
+}
+
+.gh_look_and_feel a:active {
+    background-color: #1f6feb; /* Accent color when active */
+}
+/* Styling for the top menu */
+.top-menu {
+    background-color: #f6f8fa; /* Light background similar to GitHub day mode */
+    border-bottom: 1px solid #d0d7de; /* Subtle border for separation */
+    position: fixed; /* Keep the menu at the top of the page */
+    top: 0;
+    text-align: right;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+
+.welcome_message{
+    position: relative; 
+    top: 0;
+}
+.top-menu ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    height: 50px; /* Adjust height for comfortable spacing */
+}
+
+.top-menu ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu ul li a {
+    display: block; /* Ensure the link fills the li */
+    padding: 0 15px; /* Add spacing between links */
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none; /* Remove underline */
+    color: #24292f; /* Dark text for readability */
+    line-height: 50px; /* Vertically center the text */
+}
+
+.top-menu ul li a:hover {
+    background-color: #eaecef; /* Light hover effect */
+    color: #0366d6; /* GitHub-style blue on hover */
+    border-radius: 4px; /* Rounded edges on hover */
+}
+.li_align_right {
+
+    text-align: right;
+}
+
+/* Add spacing below the menu so content isn't hidden */
+body {
+    padding-top: 50px; /* Matches the menu height */
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f8fa;
+    color: #24292f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container_doc {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+.title h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+.title p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #586069;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ea44f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #238636;
+}
+.links {
+    margin-top: 10px;
+}
+.links a {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+}
+.links a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #0366d6;
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration: none; /* Removes underline by default */
+}
+
+a:hover {
+    color: #0366d6;
+    text-decoration: none; 
+    background-color:rgb(183, 210, 240);
+    padding: 3px;
+    border-radius: 3px;
+}
+.add_new_ticket input[type='text']{
+    width: 200px;
+}
