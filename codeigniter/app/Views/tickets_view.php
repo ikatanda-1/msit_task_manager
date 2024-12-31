@@ -46,9 +46,9 @@
     display: flex;
     justify-content: space-between; /* Center horizontally */
     align-items: center; /* Center vertically */
-   
+    max-width: 800px;
     height: 100vh; /* Ensure the container takes the full height of the viewport */
-    margin: 0;
+    margin: 0 auto;
 }
 .no-comments {
             text-align: center;
