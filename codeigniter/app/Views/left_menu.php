@@ -30,7 +30,7 @@ $userId = $session->get('user_id');
             padding: 10px;
             color: #24292f;
             padding-top: 100px;
-            width: 200px;
+            width: 120px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
