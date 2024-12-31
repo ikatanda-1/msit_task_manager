@@ -25,13 +25,17 @@
         th {
             background-color: #f4f4f4;
         }
+        .view_users{
+            position: relative;
+            top: 100px;
+        }
     </style>
 </head>
 <body>
 <?= view('header') ?>
 
 <?= view('left_menu') ?>
- 
+ <div class='view_users'>
     <table>
         <thead><tr>
             <td colspan=8>User List</td></tr>
@@ -76,5 +80,6 @@
             <?php endif; ?>
         </tbody>
     </table>
+            </div>
 </body>
 </html>

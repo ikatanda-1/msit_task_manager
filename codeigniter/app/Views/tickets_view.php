@@ -47,6 +47,7 @@
     justify-content: space-between; /* Center horizontally */
     align-items: center; /* Center vertically */
     max-width: 800px;
+    top: 100px;
     height: 100vh; /* Ensure the container takes the full height of the viewport */
     margin: 0 auto;
 }
