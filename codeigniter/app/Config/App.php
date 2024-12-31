@@ -17,7 +17,7 @@ class App extends BaseConfig
      * E.g., http://example.com/
      */
 
-    public string $baseURL = 'http://cerberus-project.online/';
+    public string $baseURL = 'https://cerberus-project.online/';
 
 
     /**
