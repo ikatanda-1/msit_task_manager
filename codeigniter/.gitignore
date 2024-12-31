@@ -2,6 +2,7 @@
 # Operating Specific Junk Files
 #-------------------------
 .env
+app/Config/App.php
 # OS X
 .DS_Store
 .AppleDouble
@@ -84,7 +85,7 @@ phpunit
 #-------------------------
 # Composer
 #-------------------------
-vendor/
+
 
 #-------------------------
 # IDE / Development Files
