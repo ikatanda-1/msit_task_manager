@@ -114,10 +114,10 @@ $userId = $session->get('user_id');
                     </ul>
                 </li>
             <?php endif; ?>
-            <li><a href="#" class="toggle-menu">Events</a>
+            <li><a href="#" class="toggle-menu">Queue</a>
                      <ul class="submenu">
-                        <li><a href="<?= site_url('events/new') ?>">Add new</a></li>
-                        <li><a href="<?= site_url('events') ?>">Events</a></li>
+                        <li><a href="<?= site_url('events/new') ?>">Add to queue</a></li>
+                        <li><a href="<?= site_url('events') ?>">My queues</a></li>
                     </ul>
             </li>
             <li><a href="<?= site_url('/profile/').$userId ?>">Profile</a></li>
