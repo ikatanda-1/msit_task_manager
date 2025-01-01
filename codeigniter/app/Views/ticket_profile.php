@@ -71,7 +71,9 @@
             </div>
             <div class="ticket-info">
                 <label>Client Name:</label>
-                <span><?= esc($ticketDetails[0]->reg_name) ?></span>
+                <span>
+                <a href="<?= site_url('company/'.$ticketDetails[0]->client_id) ?>">   
+                <?= esc($ticketDetails[0]->reg_name) ?></a></span>
             </div>
             <div class="ticket-info">
                 <label>Status:</label>
