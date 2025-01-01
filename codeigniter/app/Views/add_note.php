@@ -58,7 +58,7 @@
 <body>
 <?= view('header') ?>
 <?= view('left_menu') ?>
-    <h1><?= esc($ticket_title[0]->ticket_comment) ?></h1>
+    <h1><?= esc($ticket_title) ?></h1>
 
     <!-- Display error or success messages -->
     <?php if (session()->getFlashdata('error')): ?>
