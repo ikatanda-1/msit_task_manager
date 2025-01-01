@@ -101,6 +101,7 @@ body {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 11px;
     background-color: #f6f8fa;
     color: #24292f;
     display: flex;
