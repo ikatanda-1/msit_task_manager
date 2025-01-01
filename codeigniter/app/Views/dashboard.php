@@ -28,7 +28,7 @@
         }
         input {
             width: 50%;
-            height: 30px;
+            height: 20px;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
