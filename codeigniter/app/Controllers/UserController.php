@@ -44,5 +44,20 @@ class UserController extends BaseController
         return $this->response->setJSON($result);
     }
 
+    public function getUserType()
+    {
+        $session = session();
+        $userId = $session->get('user_id'); // Retrieve the logged-in user's ID
+
+        $userModel = new UserModel();
+        $user = $userModel->getUserType($userId);
+
+        if ($user) {
+            return $user['user_type']; // Return the user type
+        }
+
+        return null; // Return null if user not found
+    }
+
 
 }

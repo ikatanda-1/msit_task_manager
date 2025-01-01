@@ -105,7 +105,7 @@ $userId = $session->get('user_id');
                     <li><a href="<?= site_url('time/sheet/').$userId ?>">Time sheet</a></li>
                 </ul>
             </li>
-            <?php if (/* usertype == admin */ true): ?>
+            <?php if ($userType == 1): ?> 
                 <li>
                     <a href="#" class="toggle-menu">Users</a>
                     <ul class="submenu">

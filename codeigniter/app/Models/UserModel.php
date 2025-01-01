@@ -54,4 +54,10 @@ public function getUsers()
         ->getResult();
 }
 
+
+
+public function getUserType($userId)
+{
+    return $this->where('user_id', $userId)->select('user_type')->first();
+}
 }
