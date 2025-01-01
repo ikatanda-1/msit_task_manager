@@ -111,7 +111,7 @@
                 <?php foreach ($ticketTime as $time): ?>
                     <?php if (!empty($time->date_clocked)): ?>
                         <div class="comment">
-                            <?= esc($time->date_clocked)." ".esc($time->comment_time)." Hrs:".esc($time->hours) ?>
+                            <?= "[".esc($time->date_clocked)."] ".esc($time->comment_time)." Hrs:".esc($time->hours) ?>
                         </div>
                         
                     <?php else: ?>
