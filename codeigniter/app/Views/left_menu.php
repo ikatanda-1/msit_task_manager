@@ -1,6 +1,11 @@
 <?php
 $session = session();
 $userId = $session->get('user_id');
+
+use App\Controllers\UserController;
+
+$userController = new UserController();
+$userType = $userController->getUserType();
 ?>
 <!DOCTYPE html>
 <html lang="en">
