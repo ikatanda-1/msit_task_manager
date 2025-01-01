@@ -27,10 +27,11 @@
         }
         .view_users{
             margin: 0 auto;
-            position: relative;
-            top: 200px;
             margin-top: 100px;
-            max-width: 800px;
+            position: relative;
+            top: 120px;
+            
+            max-width: 960px;
         }
     </style>
 </head>
