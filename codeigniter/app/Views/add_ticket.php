@@ -41,6 +41,8 @@
         }
         .container {
             max-width: 600px;
+            position: relative;
+            top: 200px;
         }
         label {
             align-items: center;
@@ -52,12 +54,12 @@
 <?= view('header') ?>
 <?= view('left_menu') ?>
     <div class='container'>
-    <h1>Add New Ticket</h1>
+    <h1>New Ticket</h1>
    
     <form action="<?= base_url('tickets/add') ?>" method="post">
         <table >
             <tr>
-                <td><label for="client_name">Client</label></td>
+                <td width='100'><label for="client_name">Client</label></td>
                 <td><input type='text' name='client_regname' id='client_regname' required></td>
             </tr>
             <tr>
