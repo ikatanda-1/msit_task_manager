@@ -26,9 +26,10 @@
             background-color: #f4f4f4;
         }
         .view_users{
+            margin: 0 auto;
             position: relative;
             top: 200px;
-            margin: 0 auto;
+            
             max-width: 800px;
         }
     </style>
