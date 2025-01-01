@@ -28,6 +28,7 @@
         .view_users{
             position: relative;
             top: 100px;
+            margin: 0 auto;
         }
     </style>
 </head>
