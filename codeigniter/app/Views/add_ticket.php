@@ -42,7 +42,7 @@
         .container {
             max-width: 600px;
             position: relative;
-            top: 100px;
+            top: 50px;
         }
         label {
             align-items: center;

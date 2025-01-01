@@ -92,7 +92,7 @@
                 <?php foreach ($ticketDetails as $detail): ?>
                     <?php if (!empty($detail->comment_desc)): ?>
                         <div class="comment">
-                            <?= "[".esc($detail->create_date)."]".esc($detail->comment_desc) ?>
+                            <?= "[".esc($detail->create_date)."] ".esc($detail->comment_desc) ?>
                         </div>
                     <?php else: ?>
                         <p>No notes available for this ticket.</p>
