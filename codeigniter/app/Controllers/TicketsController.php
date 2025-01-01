@@ -271,7 +271,7 @@ public function store_time()
     ];
 
     if ($time->insert($data)) {
-        return redirect()->to('/tickets/ticket_profile/' . $ticket_id)->with('success', '<div class="notif">Time added successfully.</div>');
+        return redirect()->to('/ticket_profile/' . $ticket_id)->with('success', '<div class="notif">Time added successfully.</div>');
     } else {
         return redirect()->back()->withInput()->with('error', '<div class="notif">Failed to add note.</div>');
     }
