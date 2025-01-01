@@ -8,7 +8,7 @@
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
   <script>
     $(function () {
-        $("#tags").autocomplete({
+        $("#user").autocomplete({
             source: function (request, response) {
                 $.ajax({
                     url: "<?= site_url('users/searchUser') ?>",
@@ -37,8 +37,8 @@
 <body>
  
 <div class="ui-widget">
-  <label for="tags">Staff </label>
-  <input type='text' id="tags">
+  <label for="tags"> </label>
+  <input type='text' id="user" placeholder='User'>
 </div>
  </body>
  </html>

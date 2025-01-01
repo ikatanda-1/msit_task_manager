@@ -37,8 +37,8 @@
 <body>
  
 <div class="ui-widget">
-  <label for="tags">Client </label>
-  <input type='text' id="tags">
+  <label for="tags"> </label>
+  <input type='text' id="tags" placeholder='Type client name'>
 </div>
  </body>
  </html>

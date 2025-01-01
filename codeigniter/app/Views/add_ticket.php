@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td><label for="interested_name">Contact</label></td>
-                <td><input type='text' name='interested_name' id='interested_name' required></td>
+                <td><?= view('form_component/search_user') ?></td>
             </tr>
             <tr>
                 <td><label for="ticket_type">Type</label></td>
@@ -86,7 +86,7 @@
                 </td>
             </tr>
             <tr>
-                <td><label for="allocated_to">Allocated to</label></td>
+                <td><label for="allocated_to">Allocated </label></td>
                 <td><input type='text' name='allocated_to' id='allocated_to' required></td>
             </tr>
             
