@@ -142,6 +142,9 @@ public function get_priority()
 {
     $session = session();
     $user_id = $session->get('user_id'); // Get the currently logged-in user's ID
+    $ticket_title = new TicketsModel();
+
+    $ticket_title->getTicketCommentById($ticket_id);
 
     if (!$user_id) {
         return redirect()->to('/login')->with('error', 'Please log in to add a note.');
@@ -150,6 +153,7 @@ public function get_priority()
     return view('add_note', [
         'ticket_id' => $ticket_id,
         'user_id' => $user_id,
+        'ticket_title'=> $ticket_title
     ]);
 }
 
