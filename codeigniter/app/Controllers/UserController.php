@@ -27,7 +27,7 @@ class UserController extends BaseController
         $searchTerm = $this->request->getGet('term');
     
         $users = $userModel
-            ->select('user_id, f_name, l_name')
+            ->select('user_id, f_name, l_name, tel_no, email_addr')
             ->like('f_name', $searchTerm)
             ->findAll();
     
@@ -37,6 +37,8 @@ class UserController extends BaseController
                 'user_id' => $user['user_id'],
                 'label' => $user['f_name'],
                 'value' => $user['f_name'],
+                'tel_no'=> $user['tel_no'],
+                'email_addr'=> $user['email_addr'],
                 'url' => site_url('profile/' . $user['user_id'])
             ];
         }

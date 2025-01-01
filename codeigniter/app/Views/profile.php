@@ -17,7 +17,9 @@
     <p><strong>Last Name:</strong> <?= esc($user['l_name']) ?></p>
     <p><strong>User Type:</strong> <?= esc($user['type_name']) ?></p>
     <p><strong>User Status:</strong> <?= esc($user['status_desc']) ?></p>
-
+    <hr />
+    <p><strong>Email:</strong> <?= esc($user['email_addr']) ?></p>
+    <p><strong>Telephone:</strong> <?= esc($user['tel_no']) ?></p>
     <a href="<?= site_url('edit_profile') ?>">Edit Profile</a>
     </div>
 </body>

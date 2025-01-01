@@ -34,7 +34,9 @@ class UserModel extends Model
 public function getUserProfile($userId)
     {
         return $this->db->table('tm_users')
-            ->select('tm_users.f_name, tm_users.m_name, tm_users.l_name, user_types.type_name, user_status.status_desc')
+            ->select('tm_users.f_name, tm_users.m_name, tm_users.email_addr, tm_users.tel_no,
+             tm_users.l_name, user_types.type_name, 
+             user_status.status_desc')
             ->join('user_types', 'tm_users.user_type = user_types.type_id')
             ->join('user_status', 'tm_users.user_status = user_status.status_id')
             ->where('tm_users.user_id', $userId)
