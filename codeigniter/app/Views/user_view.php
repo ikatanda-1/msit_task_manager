@@ -14,7 +14,7 @@
             width: 50%;
             border-collapse: collapse; 
             position: relative;
-            top: 400px;
+            
             
         }
         th, td {
@@ -27,8 +27,9 @@
         }
         .view_users{
             position: relative;
-            top: 100px;
+            top: 200px;
             margin: 0 auto;
+            max-width: 800px;
         }
     </style>
 </head>
