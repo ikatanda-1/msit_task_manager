@@ -197,7 +197,7 @@ public function view($ticket_id)
 
     // Join query to fetch ticket details
     $builder->select('ticket_priority.p_desc as priority,
-    tickets.ticket_id,tickets.ticket_comment, tickets.due_date, date(tickets.create_date),
+    tickets.ticket_id,tickets.ticket_comment, tickets.due_date, date(tickets.create_date) as create_date,
      tm_users.f_name, tm_clients.reg_name, ticket_comments.comment_desc, 
     tickets_status.status_desc as t_status')   
         ->join('tm_users', 'tm_users.user_id = tickets.user_id')
