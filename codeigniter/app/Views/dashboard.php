@@ -34,7 +34,7 @@
             border-radius: 4px;
         }
         input[type=text] {
-    height: 55px;
+    height: 25px;
     width: 300px;
     padding: 5px;
     border-radius: 4px;
