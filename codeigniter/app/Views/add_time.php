@@ -77,7 +77,7 @@
 <body>
 <?= view('header') ?>
 <?= view('left_menu') ?>
-    <h1>Add Time</h1>
+    <h1><?= esc($ticket_title) ?></h1>
 
     <!-- Display error or success messages -->
     <?php if (session()->getFlashdata('error')): ?>
