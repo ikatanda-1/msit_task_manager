@@ -60,7 +60,7 @@
         <table >
             <tr>
                 <td width='100'><label for="client_name">Client</label></td>
-                <td><input type='text' name='client_regname' id='client_regname' required></td>
+                <td><?= view('search_view') ?></td>
             </tr>
             <tr>
                 <td><label for="interested_name">Contact</label></td>

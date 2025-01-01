@@ -41,7 +41,7 @@
 <body>
  
 <div class="ui-widget">
-  <label for="tags">Seach client </label>
-  <input type='text' id="tags">
+  <label for="tags"> </label>
+  <input type='text' id="tags" placeholder='Search client'>
 </div>
  
