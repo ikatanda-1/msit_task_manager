@@ -20,6 +20,7 @@
     <hr />
     <p><strong>Email:</strong> <?= esc($user['email_addr']) ?></p>
     <p><strong>Telephone:</strong> <?= esc($user['tel_no']) ?></p>
+    <p><strong>Address:</strong> <?= esc($user['physic_address']) ?></p>
     <a href="<?= site_url('edit_profile') ?>">Edit Profile</a>
     </div>
 </body>

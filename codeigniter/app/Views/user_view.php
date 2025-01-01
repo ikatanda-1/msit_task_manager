@@ -61,7 +61,7 @@
                 <th>Middle Name</th>
                 
                 
-                <th>Physical Address</th>
+                
                 <th>User Type</th>
                 <th>Status</th>
             </tr>
@@ -79,7 +79,7 @@
                         <td><?= esc($user->m_name) ?></td>
                         
                     
-                        <td><?= esc($user->physic_address) ?></td>
+                        
                         <td><?= esc($user->type_name) ?></td>
                         <td><?= esc($user->status_desc) ?></td>
                     </tr>
