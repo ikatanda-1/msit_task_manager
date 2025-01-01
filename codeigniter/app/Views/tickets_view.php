@@ -205,7 +205,7 @@
 
                     <td> 
                     <a href="<?= site_url('tickets/add_note/' . $ticket['ticket_id']) ?>">  
-                    Add note</a></td>
+                    New </a></td>
                     <td> 
                         
                         <a href="<?= site_url('tickets/add_time/' . $ticket['ticket_id']) ?>">  
