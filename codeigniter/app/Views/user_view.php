@@ -11,9 +11,8 @@
             margin: 20px;
         }
         table {
-            width: 50%;
-            border-collapse: collapse; 
-            position: relative;
+            width: 100%;
+          
             
             
         }
@@ -32,9 +31,9 @@
             
             
             width: 90%;
-      max-width: 960px;
+      max-width: 900px;
       margin: 40px auto; 
-      margin-top: 120px;
+      margin-top: 200px;
       background-color: #ffffff;
       border: 1px solid #d0d7de;
       border-radius: 8px;
