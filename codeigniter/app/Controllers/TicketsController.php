@@ -153,7 +153,7 @@ public function get_priority()
     return view('add_note', [
         'ticket_id' => $ticket_id,
         'user_id' => $user_id,
-        'ticket_title'=> $ticket_title
+        'ticket_title'=> $ticket_title,
     ]);
 }
 
@@ -241,7 +241,7 @@ public function add_time($ticket_id)
     return view('add_time', [
         'ticket_id' => $ticket_id,
         'user_id' => $user_id,
-        'ticket_title' => $ticket_title
+        'ticket_title' => $ticket_title,
     ]);
 }
 

@@ -69,6 +69,11 @@ class TicketsModel extends Model
             ->getResultArray();
     }
 
- 
+    public function getTicketCommentById($ticket_id)
+    {
+        return $this->select('ticket_comment')
+                    ->where('ticket_id', $ticket_id)
+                    ->first();
+    }
 
 }
