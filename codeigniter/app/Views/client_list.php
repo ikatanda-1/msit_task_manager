@@ -19,7 +19,7 @@
       width: 90%;
       max-width: 960px;
       margin: 40px auto; 
-      
+      margin-top: 120px;
       background-color: #ffffff;
       border: 1px solid #d0d7de;
       border-radius: 8px;
