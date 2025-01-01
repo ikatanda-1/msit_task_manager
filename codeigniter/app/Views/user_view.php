@@ -60,8 +60,7 @@
                 <th>First Name</th>
                 <th>Middle Name</th>
                 
-                <th>Email Address</th>
-                <th>Phone</th>
+                
                 <th>Physical Address</th>
                 <th>User Type</th>
                 <th>Status</th>
@@ -79,8 +78,7 @@
                         <td><?= esc($user->f_name) ?></td>
                         <td><?= esc($user->m_name) ?></td>
                         
-                        <td><?= esc($user->email_addr) ?></td>
-                        <td><?= esc($user->tel_no) ?></td>
+                    
                         <td><?= esc($user->physic_address) ?></td>
                         <td><?= esc($user->type_name) ?></td>
                         <td><?= esc($user->status_desc) ?></td>
