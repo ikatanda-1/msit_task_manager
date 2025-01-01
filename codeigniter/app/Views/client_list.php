@@ -15,16 +15,18 @@
       color: #24292f;
     }
     .container {
-      position: relative;  
+       
       width: 90%;
       max-width: 960px;
       margin: 40px auto; 
-      top: 200px;
+      
       background-color: #ffffff;
       border: 1px solid #d0d7de;
       border-radius: 8px;
       padding: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative; 
+      top: 200px;
     }
     h1 {
       text-align: center;
