@@ -60,7 +60,7 @@
         <table >
             <tr>
                 <td width='100'><label for="client_name">Client</label></td>
-                <td><?= view('search_view') ?></td>
+                <td><?= view('form_component/search_company') ?></td>
             </tr>
             <tr>
                 <td><label for="interested_name">Contact</label></td>
