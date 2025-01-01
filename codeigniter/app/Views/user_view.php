@@ -40,7 +40,7 @@
       padding: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       position: relative; 
-      top: 200px;
+      top: 120px;
         }
     </style>
 </head>
