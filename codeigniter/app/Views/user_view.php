@@ -27,11 +27,21 @@
         }
         .view_users{
             margin: 0 auto;
-            margin-top: 100px;
-            position: relative;
-            top: 120px;
             
-            max-width: 960px;
+            
+            
+            
+            width: 90%;
+      max-width: 960px;
+      margin: 40px auto; 
+      margin-top: 120px;
+      background-color: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative; 
+      top: 200px;
         }
     </style>
 </head>
