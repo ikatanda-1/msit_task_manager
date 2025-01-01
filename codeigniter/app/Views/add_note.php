@@ -58,7 +58,7 @@
 <body>
 <?= view('header') ?>
 <?= view('left_menu') ?>
-    <h1><?= esc($ticket_title) ?></h1>
+   
 
     <!-- Display error or success messages -->
     <?php if (session()->getFlashdata('error')): ?>
@@ -70,7 +70,7 @@
 
     <form action="<?= site_url('tickets/store_note') ?>" method="post">
         <input type="hidden" name="ticket_id" value="<?= esc($ticket_id) ?>">
-        <label for="comment_desc">Add a Note:</label>
+        <label for="comment_desc"><?= esc($ticket_title) ?></label>
         <textarea id="comment_desc" name="comment_desc" placeholder="Write your note here..." required></textarea>
         <button type="submit">Save Note</button>
     </form>

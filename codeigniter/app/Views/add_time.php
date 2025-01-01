@@ -77,7 +77,7 @@
 <body>
 <?= view('header') ?>
 <?= view('left_menu') ?>
-    <h1><?= esc($ticket_title) ?></h1>
+    
 
     <!-- Display error or success messages -->
     <?php if (session()->getFlashdata('error')): ?>
@@ -88,7 +88,7 @@
     <?php endif; ?>
 
     <form action="<?= site_url('tickets/store_time') ?>" method="post">
-    <label for="comment_desc">Time in decimals:</label>
+    <label for="comment_desc"><?= esc($ticket_title) ?></label>
         <input type='date' name='date_clocked' id='date_clocked' required>
         <input type="hidden" name="ticket_id" value="<?= esc($ticket_id) ?>">
         <input type='hidden' name='user_id' value="<?= esc($session->get('id')) ?>">
