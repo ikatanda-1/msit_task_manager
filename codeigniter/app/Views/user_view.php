@@ -29,7 +29,7 @@
             margin: 0 auto;
             position: relative;
             top: 200px;
-            
+            margin-top: 100px;
             max-width: 800px;
         }
     </style>
