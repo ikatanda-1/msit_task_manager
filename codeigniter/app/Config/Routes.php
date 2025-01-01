@@ -55,7 +55,7 @@ $routes->group('admin', function($routes) {
     $routes->get('users', 'Admin::users');
 });
 $routes->group('', ['filter' => 'auth'], function ($routes) {
-
+    $routes->get('about','Tasks::about_project');
     $routes->get('calendar', 'CalendarController::index');
     $routes->get('calendar/events', 'CalendarController::fetchEvents');
     $routes->post('calendar/add', 'CalendarController::addEvent');

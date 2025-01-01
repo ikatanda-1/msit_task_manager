@@ -46,4 +46,11 @@ class Tasks extends BaseController
    public function documentation(){
     return view('documentation');
    }
+
+
+   public function about_project(){
+    return view('about_project');
+   }
+
+
 }

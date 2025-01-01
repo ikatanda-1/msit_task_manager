@@ -1,4 +1,56 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Ticket</title>
+    <link rel="stylesheet" href="<?= base_url('assets/css.css') ?>">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
 About Our Task Management System
 Welcome to our Task Management System, a robust and intuitive platform designed to streamline task tracking, enhance productivity, and improve team collaboration. Built using CodeIgniter 4 and deployed on a secure Apache server, this system is tailored to meet the needs of businesses, teams, and individuals who aim to optimize their workflows.
 
@@ -27,3 +79,5 @@ We are committed to continuous improvement. Planned features include role-based 
 
 Thank you for choosing our Task Management System. Together, let’s achieve more with less effort!
 
+    </body>
+    </html>
