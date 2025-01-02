@@ -59,7 +59,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('calendar', 'CalendarController::index');
     $routes->get('calendar/events', 'CalendarController::fetchEvents');
     $routes->post('calendar/add', 'CalendarController::addEvent');
-
+    $routes->get('contact','Tasks::contact');
     //clientController
     $routes->get('new_client','Client::newClient');
     $routes->get('clients','Client::index');
