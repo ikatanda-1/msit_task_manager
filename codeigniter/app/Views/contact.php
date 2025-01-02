@@ -16,6 +16,8 @@
     </style>
 </head>
 <body>
+<?= view('header') ?>
+<?= view('left_menu') ?>
     <div class='container_doc'>
 <h1>About us</h1>
 This project was designed and implemented as part of a Capstone project for a MSIT degree with 
