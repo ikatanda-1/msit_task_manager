@@ -82,6 +82,10 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('search', 'SearchController::index');
     $routes->get('search/autocomplete', 'SearchController::autocomplete');
 
+    //queue controller
+    $routes->get('events/new','QueueController::add_new');
+    $routes->get('events','QueueController::index');
+
     //tasksController
     $routes->get('dash','Tasks::dash');
     $routes->get('time','Tasks::time');
@@ -105,6 +109,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('tickets/add', 'TicketsController::createTicket');
     $routes->get('add_ticket/(:num)', 'TicketsController::createTicket/$1');
     $routes->get('tickets/client/(:num)', 'TicketsController::client/$1');
+    
 
     //ticketsNoteController
 
