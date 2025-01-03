@@ -14,9 +14,9 @@
     }
 
     .bimonthly_div{
-        width: 100%;
-        border: solid thin #ccc;
-        border-radius: 3px;
+        width: 90%;
+        
+        
         margin: 8px;
     }
     .transition_view {
@@ -24,7 +24,7 @@
     }
     .tag {
         border: solid thin #ccc;
-        width: 60px;
+        width: 70px;
         padding: 5px;
         background-color: #ddd;
         border-radius: 5px;
