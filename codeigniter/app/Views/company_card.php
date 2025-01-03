@@ -44,7 +44,7 @@
         <p><span>Type:</span> <?= esc($company->type_desc) ?></p>
         <h3>Contact Person</h3>
         <p><span>Name:</span> 
-    <a href=" <?= site_url('profile/'.$contact_person) ?>">
+    <a href=" <?= site_url('profile/'.$company->contact_person) ?>">
         <?= esc($company->f_name) ?> <?= esc($company->l_name) ?>
     </a>
     

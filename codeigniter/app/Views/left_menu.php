@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
 else { 
     ?>
 
-        <li><a href="<?= site_url('events') ?>" >Queue</a></li>
+        <li><a href="<?= site_url('/events/') ?>" >Queues</a></li>
 
 <?php            
 }
