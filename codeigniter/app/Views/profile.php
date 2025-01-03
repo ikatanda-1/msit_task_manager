@@ -11,7 +11,7 @@
 
 <?= view('left_menu') ?>
 <div class="container" style="text-align: left;">
-    <h1>User Profile</h1>
+    <h1><?= esc($user['f_name']) ?> <?= esc($user['l_name']) ?></h1>
     <p><strong>First Name:</strong> <?= esc($user['f_name']) ?></p>
     <p><strong>Middle Name:</strong> <?= esc($user['m_name']) ?></p>
     <p><strong>Last Name:</strong> <?= esc($user['l_name']) ?></p>
