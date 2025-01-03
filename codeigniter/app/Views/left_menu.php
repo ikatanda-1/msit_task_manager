@@ -123,6 +123,22 @@ $userType = $userController->getUserType();
                      <ul class="submenu">
                         <li><a href="<?= site_url('events/new') ?>">Add to queue</a></li>
                         <li><a href="<?= site_url('events') ?>">My queues</a></li>
+                        <?php
+
+$current_url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+if($current_url=='http://cerberus-project.online/events'){
+
+?>
+
+<input type ='checkbox' value='monthly'> Monthly<br />
+<input type ='checkbox' value='bimonthly'> Bimonthly <br />
+<input type ='checkbox' value='biannual'> Biannual<br />
+<input type ='checkbox' value='annual'> Annual<br />
+<?php
+
+}// end if.
+
+?>
                     </ul>
             </li>
             <li><a href="<?= site_url('/profile/').$userId ?>">Profile</a></li>
