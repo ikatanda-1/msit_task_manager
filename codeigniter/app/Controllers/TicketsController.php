@@ -381,4 +381,25 @@ public function create_ticket(){
     return view('add_ticket');
 }
 
+public function addTicket()
+    {
+        /* this is a post method to add data that was 
+        created with create_ticket */
+        $ticketsModel = new TicketsModel(); // Instantiate the model
+
+        $data = [
+            'user_id' => $this->request->getPost('user_id'),
+            'client_id' => $this->request->getPost('client_id'),
+            'ticket_type' => $this->request->getPost('ticket_type'),
+            'due_date' => $this->request->getPost('due_date'),
+            'ticket_comment' => $this->request->getPost('ticket_comment')
+        ];
+
+        if ($ticketsModel->addTicket($data)) {
+            return redirect()->to('/tickets')->with('success', 'Ticket added successfully.');
+        } else {
+            return redirect()->back()->with('error', 'Failed to add ticket.');
+        }
+    }
+
 }

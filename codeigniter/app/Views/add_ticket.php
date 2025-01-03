@@ -19,7 +19,26 @@
 <?= view('header') ?>
 <?= view('left_menu') ?>
     <div class='container_doc'>
-This project is actively being developped. Check again later.
+
+    
+    <form method="post" action="<?= site_url('tickets/addTicket') ?>">
+    <label for="user_id">User ID:</label>
+    <input type="text" name="user_id" id="user_id" required><br>
+
+    <label for="client_id">Client ID:</label>
+    <input type="text" name="client_id" id="client_id" required><br>
+
+    <label for="ticket_type">Ticket Type:</label>
+    <input type="text" name="ticket_type" id="ticket_type" required><br>
+
+    <label for="due_date">Due Date:</label>
+    <input type="date" name="due_date" id="due_date" required><br>
+
+    <label for="ticket_comment">Comment:</label>
+    <textarea name="ticket_comment" id="ticket_comment" required></textarea><br>
+
+    <button type="submit">Add Ticket</button>
+</form>
 
     </div>
 </body>

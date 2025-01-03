@@ -50,10 +50,13 @@ class TicketsModel extends Model
             ->update(['ticket_status' => $status]);
     }
 
-    public function addNewTicket($data)
+ 
+public function addTicket(array $data)
     {
-        return $this->db->table($this->table)->insert($data);
+        return $this->insert($data);
     }
+    
+    
     public function getTicketsByClientId($clientId)
     {
         return $this->db->table($this->table)
