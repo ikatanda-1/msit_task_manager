@@ -33,7 +33,9 @@ class TicketsController extends BaseController
 
         // Build query
         $query = $model->select('ticket_priority.p_desc as priority,
-        tickets.ticket_id,tickets.client_id, tm_clients.reg_name, ticket_types.type_desc, tickets_status.status_desc, tickets.due_date, ' .
+        tickets.ticket_id,tickets.client_id, tm_clients.reg_name, 
+        ticket_types.type_id as type_id,
+        ticket_types.type_desc, tickets_status.status_desc, tickets.due_date, ' .
             'DATEDIFF(tickets.due_date, tickets.create_date) as days_due, tickets.ticket_comment'
         )
         ->join('ticket_priority', 'ticket_priority.priority_id = tickets.prior_id')
