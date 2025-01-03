@@ -90,7 +90,7 @@ $userType = $userController->getUserType();
         .queue_list{
             padding-left: 2px;
             overflow: auto; /* Enables scrolling when content overflows */
-            height: 20px; /* Example height to show scrolling */
+            height: 100px; /* Example height to show scrolling */
         }
     </style>
 </head>
@@ -139,10 +139,13 @@ if($current_url=='http://cerberus-project.online/events'){
 
 <li><a href="#" class="not-toggle-menu">Queue</a>
 <div class='queue_list'>
+    <hr>
 <input type ='checkbox' value='monthly'> Monthly<br />
 <input type ='checkbox' value='bimonthly'> Bimonthly <br />
 <input type ='checkbox' value='biannual'> Biannual<br />
 <input type ='checkbox' value='annual'> Annual<br />
+    <hr>
+
 </div>
 </li>
 <?php
