@@ -136,14 +136,31 @@ $current_url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 if($current_url=='http://cerberus-project.online/events'){
 
 ?>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const checkboxes = document.querySelectorAll(".toggleCheckbox");
 
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener("change", function() {
+      const targetId = checkbox.getAttribute("data-target");
+      const targetDiv = document.getElementById(targetId);
+
+      if (checkbox.checked) {
+        targetDiv.style.display = "block"; // Show the div
+      } else {
+        targetDiv.style.display = "none"; // Hide the div
+      }
+    });
+  });
+});
+</script>
 <li><a href="#" class="not-toggle-menu">Queue</a>
 <div class='queue_list'>
     
-<input type ='checkbox' value='monthly' checked> Monthly<br />
-<input type ='checkbox' value='bimonthly' checked> Bimonthly <br />
-<input type ='checkbox' value='biannual' checked> Biannual<br />
-<input type ='checkbox' value='annual' checked> Annual<br />
+<input type ='checkbox' class='toggleCheckbox' value='monthly' data-target="monthly" checked> Monthly<br />
+<input type ='checkbox' class='toggleCheckbox' value='bimonthly' data-target="bimonthly" checked> Bimonthly <br />
+<input type ='checkbox' class='toggleCheckbox' value='biannual' data-target="biannual" checked> Biannual<br />
+<input type ='checkbox' class='toggleCheckbox' value='annual' data-target="annual" checked> Annual<br />
     <hr>
 
 </div>
