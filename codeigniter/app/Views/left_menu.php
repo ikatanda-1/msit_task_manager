@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
 else { 
     ?>
 
-        <li><a href="<?= site_url('events') ?>" class="toggle-menu">Queue</a></li>
+        <li><a href="<?= site_url('events') ?>" >Queue</a></li>
 
 <?php            
 }

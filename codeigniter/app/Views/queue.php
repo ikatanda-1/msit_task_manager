@@ -29,7 +29,35 @@ This project is actively being developped. Check again later.<P>
 <div id="monthly" style="display: block;">
 <h1>Monthly queue</h2>
     
+<?php 
 
+/*
+foreach ($ticket_types as $ticket_type): ?>
+                    <tr>
+                        <td><?= esc($ticket['type_desc']) ?></td>
+                        <td>
+                            
+                        <a href="<?= site_url('tickets/' . $ticket['ticket_id']) ?>"> 
+                        <?= esc($ticket['description']) ?>
+                        </a>
+                    
+                    </td>
+                        <td>
+                        <a href="<?= site_url('profile/' . $ticket['user_id']) ?>">    
+                        <?= esc($ticket['allocated_to']) ?>
+                    
+                    </td>
+                        <td><?= esc($ticket['due_date']) ?></td>
+                        <td><?= esc($ticket['notes']) ?></td>
+                    </tr>
+                
+   
+    
+    
+
+    <?php endforeach;
+     */ 
+    ?>
 
 
 </div>
