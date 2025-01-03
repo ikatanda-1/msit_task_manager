@@ -79,9 +79,12 @@ class CompanyController extends BaseController
 
     /* ends searchClient() */
     public function create_ticket($client_id){
-       
+        $company = new ClientModel;
+        $coDetails = $company->getCompanyDetailsById($client_id);
 
-        return view("add_ticket");
+        return view("add_ticket", [
+            $coDetails['reg_name'],
+            $client_id]);
 
     }
 }
