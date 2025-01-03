@@ -9,7 +9,7 @@ class QueueController extends BaseController{
     public function index(){
        
 
-        return view('queue.php', $list);
+        return view('queue.php');
 
     }
 
