@@ -96,7 +96,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('tickets/update_status/(:num)', 'TicketsController::updateTicketStatus/$1');
     $routes->get('tickets/update_ticket_status/(:num)', 'TicketsController::updateStatusForm/$1');
     $routes->get('tickets/create','TicketsController::create_ticket'); // if ticket not yet linked to client
-    $routes->get('tickets/create/(:num)','TicketsController::create_ticket/$1'); // if ticket not yet linked to client
+    $routes->get('tickets/create/(:num)','CompanyController::create_ticket/$1'); // if ticket not yet linked to client
     $routes->get('tickets/tickets', 'TicketsController::index');
     $routes->get('/tickets/(:num)', 'TicketsController::view/$1');
   
