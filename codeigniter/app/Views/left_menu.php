@@ -139,7 +139,7 @@ if($current_url=='http://cerberus-project.online/events'){
 
 <li><a href="#" class="not-toggle-menu">Queue</a>
 <div class='queue_list'>
-    <hr>
+    
 <input type ='checkbox' value='monthly'> Monthly<br />
 <input type ='checkbox' value='bimonthly'> Bimonthly <br />
 <input type ='checkbox' value='biannual'> Biannual<br />
