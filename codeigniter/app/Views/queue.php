@@ -14,12 +14,21 @@
     }
 
     .bimonthly_div{
-        width: 300px;
-        border: solid thin #eee;
+        width: 100%;
+        border: solid thin #ccc;
         border-radius: 3px;
     }
     .transition_view {
         transition: opacity 0.5s ease;
+    }
+    .tag {
+        border: solid thin #ccc;
+        background-color: #ddd;
+        border-radius: 5px;
+    }
+    .container_doc {
+        text-align: left;
+        padding: 3px;
     }
     </style>
 </head>
@@ -45,12 +54,12 @@ This project is actively being developped. Check again later.<P>
 
     <div id="bimonthly" style="display: block;" class='transition_view'>
             <h1>Bi-monthly queue</h1>
-            <div class='bimonthly_div'>Odd months
+            <div class='bimonthly_div'><div class='tag'>Odd months</div>
 
                     <p>Activities that should be done on odd months.
             </div>
 
-            <div class='bimonthly_div'>Even months
+            <div class='bimonthly_div'> <div class='tag'>Even months</div>
                     <p>Activities that should be done on even months.
             </div>
     </div>
@@ -60,7 +69,9 @@ This project is actively being developped. Check again later.<P>
     </div>
     <div id="annual" style="display: block;" class='transition_view'>
     <h1>Annual</h1>
-
+        <div class='tag'>
+            Company tax
+        </div>
     </div>
 </div>
 </body>
