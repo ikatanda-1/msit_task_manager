@@ -54,6 +54,14 @@ This project is actively being developped. Check again later.<P>
                     <p>Activities that should be done on even months.
             </div>
     </div>
+    <div id="biannual" style="display: block;" class='transition_view'>
+    <h1>Biannual</h1>
+
+    </div>
+    <div id="annual" style="display: block;" class='transition_view'>
+    <h1>Annual</h1>
+
+    </div>
 </div>
 </body>
 </html>
