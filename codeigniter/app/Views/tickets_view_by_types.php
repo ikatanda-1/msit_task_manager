@@ -166,7 +166,7 @@
 
         <button type="submit">Apply</button>
     </form>
-    <br /> <a href="<?= site_url('tickets/tickets') ?>">back</a> to all tickets
+    <br /> <a href="<?= site_url('tickets/tickets') ?>"> < Back</a> to view all tickets
     </td>
     </tr>
 
