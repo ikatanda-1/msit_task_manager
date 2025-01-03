@@ -95,7 +95,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('/tickets/store_time', 'TicketsController::store_time');
     $routes->post('tickets/update_status/(:num)', 'TicketsController::updateTicketStatus/$1');
     $routes->get('tickets/update_ticket_status/(:num)', 'TicketsController::updateStatusForm/$1');
-
+    $routes->get('tickets/create','TicketsController::create_ticket');
 
     $routes->get('tickets/tickets', 'TicketsController::index');
     $routes->get('/tickets/(:num)', 'TicketsController::view/$1');

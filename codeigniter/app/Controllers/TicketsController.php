@@ -376,6 +376,9 @@ public function viewByType($type_id)
 }
 
 /* ends: viewByType */
+public function create_ticket(){
 
+    return view('add_ticket');
+}
 
 }
