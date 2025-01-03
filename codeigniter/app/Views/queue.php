@@ -22,8 +22,7 @@
 This project is actively being developped. Check again later.<P>
 <?php
 
-$current_url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-echo $current_url;
+
 ?>
     </div>
 </body>

@@ -82,6 +82,11 @@ $userType = $userController->getUserType();
             background-color: #eaeff2;
             color: #0366d6;
         }
+        .not-toggle-menu {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: solid thin #ddd;
+        }
     </style>
 </head>
 <body>
@@ -119,28 +124,36 @@ $userType = $userController->getUserType();
                     </ul>
                 </li>
             <?php endif; ?>
-            <li><a href="#" class="toggle-menu">Queue</a>
-                     <ul class="submenu">
-                        <li><a href="<?= site_url('events/new') ?>">Add to queue</a></li>
-                        <li><a href="<?= site_url('events') ?>">My queues</a></li>
+
                         <?php
 
 $current_url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 if($current_url=='http://cerberus-project.online/events'){
 
 ?>
-
+<li><a href="#" class="not-toggle-menu">Queue</a>
 <input type ='checkbox' value='monthly'> Monthly<br />
 <input type ='checkbox' value='bimonthly'> Bimonthly <br />
 <input type ='checkbox' value='biannual'> Biannual<br />
 <input type ='checkbox' value='annual'> Annual<br />
+</li>
 <?php
 
 }// end if.
+else { 
+    ?>
 
-?>
+        <li><a href="#" class="toggle-menu">Queue</a>
+                     <ul class="submenu">
+                        <li><a href="<?= site_url('events/new') ?>">Add to queue</a></li>
+                        <li><a href="<?= site_url('events') ?>">My queues</a></li>
                     </ul>
-            </li>
+        </li>
+
+<?php            
+}
+?>
+             
             <li><a href="<?= site_url('/profile/').$userId ?>">Profile</a></li>
             <li><a href="<?= site_url('logout') ?>">Log out</a></li>
         </ul>
