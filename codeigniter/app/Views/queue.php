@@ -35,50 +35,22 @@ This project is actively being developped. Check again later.<P>
 <div id="monthly" style="display: block;">
 <h1>Monthly queue</h2>
     
-<?php 
 
-/*
-foreach ($ticket_types as $ticket_type): ?>
-                    <tr>
-                        <td><?= esc($ticket['type_desc']) ?></td>
-                        <td>
-                            
-                        <a href="<?= site_url('tickets/' . $ticket['ticket_id']) ?>"> 
-                        <?= esc($ticket['description']) ?>
-                        </a>
-                    
-                    </td>
-                        <td>
-                        <a href="<?= site_url('profile/' . $ticket['user_id']) ?>">    
-                        <?= esc($ticket['allocated_to']) ?>
-                    
-                    </td>
-                        <td><?= esc($ticket['due_date']) ?></td>
-                        <td><?= esc($ticket['notes']) ?></td>
-                    </tr>
-                
-   
-    
-    
-
-    <?php endforeach;
-     */ 
-    ?>
 
 
 </div>
 
-<div id="bimonthly" style="display: block;">
-    <h1>Bi-monthly queue</h1>
-<div class='bimonthly_div'>Odd months
+    <div id="bimonthly" style="display: block;">
+            <h1>Bi-monthly queue</h1>
+            <div class='bimonthly_div'>Odd months
 
-<p>Activities that should be done on <pre>odd</pre> months.
-</div>
+                    <p>Activities that should be done on <pre>odd</pre> months.
+            </div>
 
-<div class='bimonthly_div'>Even months
-    <p>Activities that should be done on <pre>even</pre> months.
-</div>
-</div>
+            <div class='bimonthly_div'>Even months
+                    <p>Activities that should be done on <pre>even</pre> months.
+            </div>
     </div>
+</div>
 </body>
 </html>
