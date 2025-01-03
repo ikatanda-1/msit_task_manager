@@ -26,9 +26,15 @@ This project is actively being developped. Check again later.<P>
 ?>
 
 
-<div id="monthly" style="display: none;">This is Div 1.</div>
+<div id="monthly" style="display: block;">
+<h1>Monthly queue</h2>
+    
 
-<div id="bimonthly" style="display: none;">This is Div 2.</div>
+
+
+</div>
+
+<div id="bimonthly" style="display: block;">This is Div 2.</div>
     </div>
 </body>
 </html>
