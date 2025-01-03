@@ -62,7 +62,17 @@ foreach ($ticket_types as $ticket_type): ?>
 
 </div>
 
-<div id="bimonthly" style="display: block;">This is Div 2.</div>
+<div id="bimonthly" style="display: block;">
+    
+<div class='bimonthly_div'>Odd months
+
+<p>Activities that should be done on <pre>odd</pre> months.
+</div>
+
+<div class='bimonthly_div'>Even months
+    <p>Activities that should be done on <pre>even</pre> months.
+</div>
+</div>
     </div>
 </body>
 </html>
