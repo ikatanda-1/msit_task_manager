@@ -25,6 +25,7 @@
 <?= view('left_menu') ?>
     <div class='container_doc'>
 This project is actively being developped. Check again later.<P>
+    <button class='add_to_queue'>Add item</button>
 <?php
 
 
