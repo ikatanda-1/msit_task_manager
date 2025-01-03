@@ -83,8 +83,8 @@ class CompanyController extends BaseController
         $coDetails = $company->getCompanyDetailsById($client_id);
 
         return view("add_ticket", [
-            $coDetails['reg_name'],
-            $client_id]);
+           'reg_name'=> $coDetails['reg_name'],
+            'client_id' => $client_id]);
 
     }
 }
