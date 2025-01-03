@@ -20,7 +20,7 @@
             
             width: 100%;
             max-width: 400px;
-            padding: 20px;
+            padding: 10px;
            
             background-color: #ffffff;
             border: 1px solid #d0d7de;
