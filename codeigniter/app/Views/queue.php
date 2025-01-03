@@ -17,7 +17,9 @@
         width: 300px;
         border-radius: 3px;
     }
-
+    .transition_view {
+        transition: opacity 0.5s ease;
+    }
     </style>
 </head>
 <body>
@@ -32,7 +34,7 @@ This project is actively being developped. Check again later.<P>
 ?>
 
 
-<div id="monthly" style="display: block;">
+<div id="monthly" style="display: block;" class='transition_view'>
 <h1>Monthly queue</h2>
     
 
@@ -40,7 +42,7 @@ This project is actively being developped. Check again later.<P>
 
 </div>
 
-    <div id="bimonthly" style="display: block;">
+    <div id="bimonthly" style="display: block;" class='transition_view'>
             <h1>Bi-monthly queue</h1>
             <div class='bimonthly_div'>Odd months
 
