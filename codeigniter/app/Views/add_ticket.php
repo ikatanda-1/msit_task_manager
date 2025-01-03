@@ -12,6 +12,15 @@
         width: 1000px;
         padding: 10px;
     }
+    input {
+        padding: 10px;
+        width: 200px;
+
+    }
+    .container_doc{
+        max-width: 400px;
+        
+    }
 
     </style>
 </head>
