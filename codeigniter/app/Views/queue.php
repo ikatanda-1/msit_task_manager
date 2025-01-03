@@ -13,6 +13,11 @@
         padding: 10px;
     }
 
+    .bimonthly_div{
+        width: 300px;
+        border-radius: 3px;
+    }
+
     </style>
 </head>
 <body>
@@ -63,7 +68,7 @@ foreach ($ticket_types as $ticket_type): ?>
 </div>
 
 <div id="bimonthly" style="display: block;">
-    
+    <h1>Bi-monthly queue</h1>
 <div class='bimonthly_div'>Odd months
 
 <p>Activities that should be done on <pre>odd</pre> months.
