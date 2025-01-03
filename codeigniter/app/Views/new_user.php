@@ -17,15 +17,17 @@
             height: 100vh;
         }
         .container_div {
-            position: block;
+            
             width: 100%;
             max-width: 400px;
             padding: 20px;
-            padding-top: 100px;
+           
             background-color: #ffffff;
             border: 1px solid #d0d7de;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top:100px;
         }
         h2 {
             text-align: center;
