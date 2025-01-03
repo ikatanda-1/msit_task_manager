@@ -17,16 +17,18 @@
         width: 100%;
         border: solid thin #ccc;
         border-radius: 3px;
+        margin: 8px;
     }
     .transition_view {
         transition: opacity 0.5s ease;
     }
     .tag {
         border: solid thin #ccc;
-        width: 40px;
+        width: 60px;
         padding: 5px;
         background-color: #ddd;
         border-radius: 5px;
+        font-size: 10px;
     }
     .container_doc {
         text-align: left;
