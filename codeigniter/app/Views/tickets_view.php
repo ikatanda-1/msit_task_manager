@@ -210,7 +210,11 @@
                         
                         <a href="<?= site_url('tickets/add_time/' . $ticket['ticket_id']) ?>">  
                         Add time</a></td>
-                    <td><?= esc($ticket['type_desc']) ?></td>
+                    <td>
+                        
+                    <a href="<?= site_url('tickets/types/' . $ticket['type_id']) ?>"> 
+                    <?= esc($ticket['type_desc']) ?></a>
+                </td>
                     <td><?= esc($ticket['status_desc']) ?></td>
                     
                     <td>
