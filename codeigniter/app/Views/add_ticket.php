@@ -13,13 +13,14 @@
         padding: 10px;
     }
     input {
-        padding: 10px;
+        margin: 5px;
+        align: right;
         width: 200px;
 
     }
     .container_doc{
         max-width: 400px;
-        
+
     }
 
     </style>
