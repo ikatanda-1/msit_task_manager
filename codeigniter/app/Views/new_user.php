@@ -29,8 +29,8 @@
             position: relative;
             top:150px;
         }
-        .container_div input {
-            width: 300px;
+        input {
+            width: 200px;
         }
         h2 {
             text-align: center;
