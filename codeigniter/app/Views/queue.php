@@ -46,11 +46,11 @@ This project is actively being developped. Check again later.<P>
             <h1>Bi-monthly queue</h1>
             <div class='bimonthly_div'>Odd months
 
-                    <p>Activities that should be done on <pre>odd</pre> months.
+                    <p>Activities that should be done on odd months.
             </div>
 
             <div class='bimonthly_div'>Even months
-                    <p>Activities that should be done on <pre>even</pre> months.
+                    <p>Activities that should be done on even months.
             </div>
     </div>
 </div>
