@@ -43,7 +43,12 @@
         <p><span>Address:</span> <?= esc($company->re_address) ?></p>
         <p><span>Type:</span> <?= esc($company->type_desc) ?></p>
         <h3>Contact Person</h3>
-        <p><span>Name:</span> <?= esc($company->f_name) ?> <?= esc($company->l_name) ?></p>
+        <p><span>Name:</span> 
+    <a href=" <?= site_url('profile/'.$contact_person) ?>">
+        <?= esc($company->f_name) ?> <?= esc($company->l_name) ?>
+    </a>
+    
+    </p>
         <p><span>Email:</span> <?= esc($company->email_addr) ?></p>
         <p><span>Phone:</span> <?= esc($company->tel_no) ?></p>
         <div class="links">

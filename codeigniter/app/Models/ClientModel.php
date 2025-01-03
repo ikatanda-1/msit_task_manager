@@ -51,7 +51,13 @@ class ClientModel extends Model {
     public function getCompanyDetailsById($id)
     {
         return $this->db->table($this->table)
-            ->select('tm_clients.id, tm_clients.reg_name, tm_clients.reg_no, tm_clients.re_address, tm_client_types.type_desc, tm_users.f_name, tm_users.l_name, tm_users.email_addr, tm_users.tel_no')
+            ->select('tm_clients.id, tm_clients.reg_name, 
+            tm_clients.reg_no, tm_clients.re_address, 
+            tm_client_types.type_desc, 
+            tm_users.f_name, tm_users.l_name, tm_users.email_addr, tm_users.tel_no,
+            tm_clients.contact_person' 
+            
+            )
             ->join('tm_client_types', 'tm_client_types.type_id = tm_clients.client_type_id')
             ->join('tm_users', 'tm_users.user_id = tm_clients.contact_person')
             ->where('tm_clients.id', $id)
