@@ -347,5 +347,69 @@ public function client($clientId)
         return view('tickets_client', $data);
     }
     /* ends: client() */
+/* start viewByType() */
+
+
+public function viewByType($type_id)
+{
+    $session = session();
+    $userId = $session->get('user_id'); // Retrieve current user's ID from session
+    $this->showForm();
+    $this->get_priority();
+    if (!$userId) {
+        echo $session->get('username');
+        //return redirect()->to('/login'); // Redirect if not logged in
+    }
+
+    $model = new TicketsModel();
+
+    // Get query parameters for sorting and filtering
+    $sortBy = $this->request->getGet('sort_by') ?? 'tickets.due_date';
+    $filterDueDate = $this->request->getGet('filter_due_date');
+    $filterStatus = $this->request->getGet('filter_status');
+    $showClosed = $this->request->getGet('show_closed');
+    $filterPriority = $this->request->getGet('filter_priority');
+
+    // Build query
+    $query = $model->select('ticket_priority.p_desc as priority,
+    tickets.ticket_id,tickets.client_id, tm_clients.reg_name, 
+    ticket_types.type_id as type_id,
+    ticket_types.type_desc, tickets_status.status_desc, tickets.due_date, ' .
+        'DATEDIFF(tickets.due_date, tickets.create_date) as days_due, tickets.ticket_comment'
+    )
+    ->join('ticket_priority', 'ticket_priority.priority_id = tickets.prior_id')
+    ->join('tm_clients', 'tm_clients.id = tickets.client_id')
+    ->join('ticket_types', 'ticket_types.type_id = tickets.ticket_type')
+    ->join('tickets_status', 'tickets_status.status_id = tickets.ticket_status')
+    ->where('tickets.user_id', $userId)
+    ->where('ticket_types.type_id', $type_id);
+
+    if ($filterDueDate) {
+        $query->where('tickets.due_date >=', $filterDueDate);
+    }
+    if ($filterStatus) {
+        $query->where('tickets_status.status_id', $filterStatus);
+    }
+    if ($filterPriority) {
+        $query->where('ticket_priority.priority_id', $filterPriority);
+    }
+    if (!$showClosed) {
+        $query->where('tickets_status.status_id !=', 4); // Exclude closed tickets
+    }
+    $tickets = $query->orderBy($sortBy, 'ASC')->findAll();
+
+    return view('tickets_view_by_types', [
+        'tickets' => $tickets,
+        'sortBy' => $sortBy,
+        'filterDueDate' => $filterDueDate,
+        'filterStatus' => $filterStatus,
+        'showClosed' => $showClosed,
+        'filterPriority' => $filterPriority,
+        'type_id' =>$type_id
+    ]);
+}
+
+/* ends: viewByType */
+
 
 }
