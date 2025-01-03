@@ -99,16 +99,16 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
 
     $routes->get('tickets/tickets', 'TicketsController::index');
     $routes->get('/tickets/(:num)', 'TicketsController::view/$1');
-    $routes->get('/tickets/create', 'TicketsController::create');
+  
     $routes->post('/tickets/store', 'TicketsController::store');
     $routes->get('/tickets/add_note/(:num)', 'TicketsController::add_note/$1');
     $routes->get('/tickets/add_time/(:num)', 'TicketsController::add_time/$1');
     $routes->get('tickets/ticket_form', 'TicketsController::showForm');
     
 
-    $routes->post('tickets/add', 'TicketsController::createTicket');
-    $routes->get('add_ticket/(:num)', 'TicketsController::createTicket/$1');
-    $routes->get('add_new_ticket/(:num)', 'TicketsController::createTicket/$1');
+
+  
+   
     $routes->get('tickets/client/(:num)', 'TicketsController::client/$1');
     $routes->get('tickets/types/(:num)','TicketsController::viewByType/$1');
 
