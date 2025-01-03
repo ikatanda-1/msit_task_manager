@@ -12,6 +12,6 @@ class TicketTypesModel extends Model
 
     public function getTypeName($type_id){
         /* returns type name from type_id */
-        
+        return $this->select('type_id, type_desc')->findAll();
     }
 }

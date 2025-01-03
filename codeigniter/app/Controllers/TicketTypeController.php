@@ -11,4 +11,6 @@ $model = new TicketTypesModel;
 /* this class will call up all tickets of a one type and under the listed user */
 
 }
+
+
 }
