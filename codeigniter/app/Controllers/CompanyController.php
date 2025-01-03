@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\ClientModel;
 use App\Models\TicketsModel;
 
+
 class CompanyController extends BaseController
 {
     /* start: index() */
@@ -78,8 +79,7 @@ class CompanyController extends BaseController
 
     /* ends searchClient() */
     public function create_ticket($client_id){
-        $coDetails = $this->getCoDetails($client_id);
-        $co_name = $coDetails['reg_name'];
+       
 
         return view("add_ticket");
 
