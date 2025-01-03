@@ -108,6 +108,7 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
 
     $routes->post('tickets/add', 'TicketsController::createTicket');
     $routes->get('add_ticket/(:num)', 'TicketsController::createTicket/$1');
+    $routes->get('add_new_ticket/(:num)', 'TicketsController::createTicket/$1');
     $routes->get('tickets/client/(:num)', 'TicketsController::client/$1');
     $routes->get('tickets/types/(:num)','TicketsController::viewByType/$1');
 
