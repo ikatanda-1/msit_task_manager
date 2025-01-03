@@ -7,7 +7,7 @@ use App\Models\TicketTypesModel;
 
 class QueueController extends BaseController{
     public function index(){
-        $list = $this->getListOfTicketTypes();
+       
 
         return view('queue.php', $list);
 
