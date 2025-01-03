@@ -77,4 +77,10 @@ class CompanyController extends BaseController
 }
 
     /* ends searchClient() */
+    public function create_ticket($client_id){
+        return view("add_ticket",[
+            'client_id'=> $client_id
+        ]);
+
+    }
 }

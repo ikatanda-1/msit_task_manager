@@ -376,12 +376,10 @@ public function viewByType($type_id)
 }
 
 /* ends: viewByType */
-public function create_ticket($client_id=null){
-    if ($client_id ===null){
+public function create_ticket(){
+    
         return view('add_ticket');
-    }else {
-        return view('add_client', ['client_id' =>$client_id]);
-    }
+    
     
 }
 
