@@ -15,6 +15,7 @@
 
     .bimonthly_div{
         width: 300px;
+        border: solid thin #eee;
         border-radius: 3px;
     }
     .transition_view {
