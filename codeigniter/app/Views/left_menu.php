@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-<li><a href="#" class="not-toggle-menu">Queue</a>
+<li><a href="<?= site_url('events') ?>" class="not-toggle-menu">Queue</a>
 <div class='queue_list'>
     
 <input type ='checkbox' class='toggleCheckbox' value='monthly' data-target="monthly" checked> Monthly<br />
@@ -171,12 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
 else { 
     ?>
 
-        <li><a href="#" class="toggle-menu">Queue</a>
-                     <ul class="submenu">
-                        <li><a href="<?= site_url('events/new') ?>">Add to queue</a></li>
-                        <li><a href="<?= site_url('events') ?>">My queues</a></li>
-                    </ul>
-        </li>
+        <li><a href="<?= site_url('events') ?>" class="toggle-menu">Queue</a></li>
 
 <?php            
 }
