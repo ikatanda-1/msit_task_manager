@@ -19,8 +19,12 @@
 <?= view('header') ?>
 <?= view('left_menu') ?>
     <div class='container_doc'>
-This project is actively being developped. Check again later.
+This project is actively being developped. Check again later.<P>
+<?php
 
+$current_url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+echo $current_url;
+?>
     </div>
 </body>
 </html>
