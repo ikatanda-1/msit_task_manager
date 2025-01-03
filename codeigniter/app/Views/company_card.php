@@ -49,7 +49,7 @@
         <div class="links">
         <a href="<?= site_url('edit_company/'.$company->id) ?>">Edit</a>
         <a href="<?= site_url('tickets/client/'.$company->id) ?>">Tickets</a>
-        <a href="<?= site_url('add_ticket/'.$company->id) ?>">Add ticket</a>
+        <a href="<?= site_url('tickets/create/'.$company->id) ?>">Add ticket</a>
         </div>
     </div>
 </body>
