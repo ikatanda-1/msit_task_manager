@@ -89,42 +89,8 @@ public function get_priority()
 
 /* ends: get_priority() */
 
-    public function create()
-    {
-        $clientsModel = new ClientModel();
-        $usersModel = new UserModel();
-        $ticketTypesModel = new TicketTypesModel();
-        $this->get_priority();
-        // Fetch data for suggestive fields
-        $clients = $clientsModel->findAll();
-        $staff = $usersModel->where('user_type', 2)->findAll();
-        $ticketTypes = $ticketTypesModel->findAll();
+  
 
-        return view('add_ticket', [
-            'clients' => $clients,
-            'staff' => $staff,
-            'ticketTypes' => $ticketTypes,
-        ]);
-    }
-
-    public function store()
-    {
-        $ticketsModel = new TicketsModel();
-
-        // Get form data
-        $data = [
-            'client_id' => $this->request->getPost('client_id'),
-            'user_id' => $this->request->getPost('user_id'),
-            'ticket_type' => $this->request->getPost('ticket_type'),
-            'create_date' => date('Y-m-d'), // Default to current date
-        ];
-
-        if ($ticketsModel->insert($data)) {
-            return redirect()->to('/tickets')->with('success', 'Ticket added successfully.');
-        } else {
-            return redirect()->back()->withInput()->with('error', 'Failed to add ticket.');
-        }
-    }
 
     public function profile($ticketId)
     {
